@@ -1,0 +1,102 @@
+* {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #EAC926;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+header ul li {
+    text-decoration: none;
+}
+
+footer {
+    color: #666;
+}
+
+footer section {
+    text-align: center;
+}
+
+footer .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+footer h4 {
+    font-weight: bold;
+    margin-block: 0;
+    margin-inline: 0;
+}
+
+footer section .cuerpo {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.loginbar {
+    text-decoration: none;
+}
+
+.burger-menu i {
+    background-color: #1259c3;
+    color: #ebebeb;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.logo {
+    width: 40%;
+    margin: 5%;
+}
+
+.searchBar {
+    margin-left: 5%;
+}
+
+.cuerpo {
+    font-size: 12px;
+}
+
+.titular {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+}
+
+.descripcion {
+    font-size: 16px;
+}
+
+.fraseCuotas {
+    text-align: center;
+}
