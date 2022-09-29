@@ -1,20 +1,20 @@
 * {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    margin: 0px;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
-main{
+main {
     width: 90%;
     margin: auto;
 }
 
-body{
+body {
     background-color: #ebebeb;
 }
 
-article{
+article {
     margin: 5px 0px 5px 0px;
 }
 
@@ -25,18 +25,126 @@ a {
 header {
     background-color: #EAC926;
     text-decoration: none;
-    padding: 0.75rem 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 45%;
+}
+
+.searchBar {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.fraseCuotas {
+    text-align: center;
+    margin: 0.5rem;
+    width: 100%;
 }
 
 nav {
     text-decoration: none;
-    margin: 1rem;
+    display: none;
+}
+
+.loginbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 ul {
     list-style: none;
-    padding: 0;
-    text-decoration: none;
+}
+
+.burger-menu {
+    margin: 0.75rem auto;
+    text-align: center;
+    width: 100%;
+}
+
+.burger-menu i {
+    background-color: #1259c3;
+    color: #ebebeb;
+    padding: 0.75rem;
+    margin: auto;
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+}
+
+.banner {
+    width: 100vw;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+}
+
+main section .listaProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    background-color: #ebebeb;
+    margin: 10px 0px;
+}
+
+.datosProducto {
+    background-color: #fff;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+}
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+}
+
+.descripcion {
+    margin-top: 2rem;
+    font-size: 16px;
+    color: #666;
+    display: none;
+}
+
+main section article i {
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
 footer {
@@ -67,60 +175,6 @@ footer section .cuerpo {
     margin-right: 15%;
 }
 
-.loginbar {
-    text-decoration: none;
-    display: none;
-}
-
-.navbar{
-    display: none;
-}
-
-.burger-menu{
-    margin:0.75rem auto 0px;
-    text-align: center;
-}
-
-.burger-menu i {
-    background-color: #1259c3;
-    color: #ebebeb;
-    padding: 0.75rem;
-    margin: auto;
-    border-radius: 0.6rem;
-    font-size: 1.5rem;
-}
-
-.banner{
-    width: 100vw;
-}
-
-.logo {
-    width: 40%;
-    margin: 5%;
-}
-
-.searchBar {
-    margin-left: 5%;
-}
-
-.producto{
-    background-color: #ebebeb;
-    margin: 10px 0px;
-}
-
-.producto i{
-    color: #39b54a;
-    border: #39b54a solid 1px;
-    padding: 10px;
-    border-radius: 90px;
-}
-
-.datosProducto{
-    background-color: #fff;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-}
-
 .cuerpo {
     font-size: 12px;
 }
@@ -130,42 +184,25 @@ footer section .cuerpo {
     color: #666;
 }
 
-.precio {
-    font-size: 18px;
-}
-
-.descuento {
-    font-size: 16px;
-    color: #39b54a;
-}
-
-.descripcion {
-    margin-top: 2rem;
-    font-size: 16px;
-    color: #666;
-    display: none;
-}
-
-.fraseCuotas {
-    text-align: center;
-    margin: 0.5rem;
-}
-
 @media (min-width: 361px) {
-    .navbar{
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .descripcion {
         display: block;
     }
-    .loginbar{
-        display: block;
+
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
     }
-    .descripcion{
-        display: block;
-    }
-    
 }
 
 @media (min-width: 769px) {
-    .producto{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .producto {
+        width: 24%;
     }
 }
