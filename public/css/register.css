@@ -1,0 +1,28 @@
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem 0rem;
+    width: 100%;
+}
+
+form button{
+    padding: 0.5rem;
+    width: 45%;
+
+}
+
+@media (min-width: 361px) {
+    
+}
+
+@media (min-width: 769px) {
+    
+}

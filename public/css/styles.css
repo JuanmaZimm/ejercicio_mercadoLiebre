@@ -20,6 +20,11 @@ article {
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
 }
 
 header {
@@ -162,11 +167,17 @@ footer {
     background-color: #fff;
     color: #666;
     padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer section {
     text-align: center;
     margin: 2rem 0px;
+    width: 100%;
 }
 
 footer .icon {
@@ -184,6 +195,11 @@ footer h4 {
 footer section .cuerpo {
     margin-left: 15%;
     margin-right: 15%;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
 }
 
 .cuerpo {
@@ -232,5 +248,9 @@ footer section .cuerpo {
 @media (min-width: 769px) {
     .producto {
         width: 24%;
+    }
+
+    footer section{
+        width: 30%;
     }
 }
