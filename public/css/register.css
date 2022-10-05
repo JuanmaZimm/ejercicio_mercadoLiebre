@@ -1,28 +1,128 @@
-form{
+.form{
+    padding: 1rem 0px;
+}
+
+.formRegister {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1rem 0px;
 }
 
-form div{
+.formRegister div label{
+    font-weight: 500;
+}
+
+.formRegister div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 1rem 0rem;
+    align-items: flex-start;
+    margin: 0.5rem 0rem;
     width: 100%;
 }
 
-form button{
-    padding: 0.5rem;
-    width: 45%;
-
+.formBar{
+    width: 100%;
+    border: #666 solid 1px;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
 }
 
+.formProfile div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem 0px;
+}
+
+.formProfile div input{
+    margin-right: 0.5rem;
+}
+
+.formInterests div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem 0px;
+}
+
+.formInterests div input{
+    margin-right: 0.5rem;
+}
+
+.formRegister .formButtons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.formRegister .formButtons div{
+    width: 50%;
+}
+
+.formRegister .formButtons .buttonSubmit{
+    padding-right: 0.5rem;
+}
+
+.formRegister .formButtons .buttonReset{
+    padding-right: 0.5rem;
+}
+
+.formRegister .formButtons div button { 
+    width: 100%;
+    color: #ebebeb;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.formRegister .formButtons .buttonSubmit button{
+    background-color: #1259c3;
+    border: #1259c3 1px solid;
+}
+
+.formRegister .formButtons .buttonReset button{
+    background-color: red;
+    border: red 1px solid;
+}
+
+
 @media (min-width: 361px) {
-    
+    .formRegister div{
+        padding: 0px 0.5rem;
+    }
+
+    .formRegister .formName{
+        width: 50%;
+    }
+
+    .formRegister .formButtons{
+        padding: 0px;
+    }
 }
 
 @media (min-width: 769px) {
+
+    .formRegister .formPassword{
+        width: 50%;
+    }
+
+    .formRegister .formBirthdate{
+        width: 50%;
+    }
     
+    .formRegister .formAdress{
+        width: 50%;
+    }
+
+    .formRegister .formButtons{
+        justify-content: flex-end;
+    }
+
+    .formRegister .formButtons div{
+        width: 25%;
+    }
 }

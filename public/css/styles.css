@@ -23,7 +23,7 @@ a {
     color: black;
 }
 
-a:visited{
+a:visited {
     color: black;
 }
 
@@ -50,6 +50,15 @@ header {
 
 .searchBar input {
     width: 90%;
+    border: #666 solid 1px;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+}
+
+.searchBar button {
+    border: #666 solid 1px;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
 }
 
 .fraseCuotas {
@@ -65,17 +74,19 @@ nav {
 }
 
 .loginbar {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-align: center;
 }
 
 .navbar {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-align: center;
 }
 
 ul {
@@ -197,7 +208,7 @@ footer section .cuerpo {
     margin-right: 15%;
 }
 
-footer .copyright{
+footer .copyright {
     width: 100%;
     text-align: center;
 }
@@ -246,11 +257,15 @@ footer .copyright{
 }
 
 @media (min-width: 769px) {
+    .cuerpo{
+        font-size: 1rem;
+    }
+
     .producto {
         width: 24%;
     }
 
-    footer section{
+    footer section {
         width: 30%;
     }
 }
