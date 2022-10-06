@@ -50,4 +50,12 @@
         width: 50%;
         margin: auto;
     }
+
+    .formLogin .buttonSubmit button{
+        transition-duration: 500ms;
+    }
+
+    .formLogin .buttonSubmit button:hover{
+        background-color: #0022AA;
+    }
 }
